@@ -4,7 +4,7 @@ import App from "./App";
 import List from "./list";
 const Router = () => {
     return (
-        <BrowserRouter  basename="/Nok">
+        <BrowserRouter  basename="/Noy">
             <Routes>
                 <Route path="/" element={<App />} />
                 <Route path="/list" element={<List />} />
