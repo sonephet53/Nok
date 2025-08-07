@@ -9,11 +9,16 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
-   build: {
-    outDir: 'dist',
-  },
   server: {
+    host: '0.0.0.0', // เปิดให้ IP ภายนอกเข้าถึงได้
     port: 5173,
-    open: true,
+    strictPort: true, // ใช้ port นี้เท่านั้น
+  },
+  preview: {
+    host: '0.0.0.0', // สำหรับ npm run preview
+    port: 4173,
+  },
+  build: {
+    outDir: 'dist',
   }
 })
