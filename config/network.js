@@ -9,7 +9,7 @@ export const NETWORK_CONFIG = {
   getLocalUrl: () => {
     const isDev = import.meta.env.DEV
     const port = isDev ? NETWORK_CONFIG.DEV_PORT : NETWORK_CONFIG.PREVIEW_PORT
-    return `http://${NETWORK_CONFIG.LOCAL_IP}:${port}/Nok/`
+    return `http://${NETWORK_CONFIG.LOCAL_IP}:${port}/Noy/`
   },
   
   // สำหรับแสดงใน UI
